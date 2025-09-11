@@ -1,6 +1,13 @@
 import Image from 'next/image';
-import Image from 'next/image';
-import { MapPin, Building, Users, BarChart } from 'lucide-react';
+          <div className="text-center px-4">
+            <img
+              src="/ceo-photo.jpg"
+              alt="대표이사 민수홍 사진"
+              width="128"
+              height="128"
+              className="rounded-full mx-auto mb-6 border-4 border-gray-700"
+            />
+            <h3 className="text-3xl font-bold mb-4">대표이사 인사말</h3>
 
 export default function Home() {
   return (
