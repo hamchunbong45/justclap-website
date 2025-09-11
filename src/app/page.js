@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Image from 'next/image';
 import { MapPin, Building, Users, BarChart } from 'lucide-react';
 
 export default function Home() {
@@ -85,7 +86,6 @@ export default function Home() {
               height={128}
               className="rounded-full mx-auto mb-6 border-4 border-gray-700"
             />
-            <Users className="mx-auto h-12 w-12 text-yellow-400 mb-4" />
             <h3 className="text-3xl font-bold mb-4">대표이사 인사말</h3>
             <p className="max-w-3xl mx-auto text-lg text-gray-400">
               "격투기 스포츠에 대한 열정 하나로 이 길을 걸어왔습니다. '저스트클랩'은 선수와 지도자, 그리고 팬 모두가 상생할 수 있는 건강한 생태계를 만드는 첫걸음이 될 것입니다. 많은 관심과 응원 부탁드립니다."
