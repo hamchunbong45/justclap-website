@@ -1,13 +1,4 @@
-import Image from 'next/image';
-          <div className="text-center px-4">
-            <img
-              src="/ceo-photo.jpg"
-              alt="대표이사 민수홍 사진"
-              width="128"
-              height="128"
-              className="rounded-full mx-auto mb-6 border-4 border-gray-700"
-            />
-            <h3 className="text-3xl font-bold mb-4">대표이사 인사말</h3>
+import { MapPin, Building, BarChart } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -36,7 +27,6 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
           <div className="relative z-20 px-4">
             <h2 className="text-5xl font-extrabold mb-4">격투기 스포츠의 새로운 기준, JustClap</h2>
@@ -86,11 +76,11 @@ export default function Home() {
         {/* 대표이사 인사말 */}
         <section id="ceo" className="py-16 bg-gray-800 rounded-lg mb-16 scroll-mt-20">
           <div className="text-center px-4">
-            <Image
+            <img
               src="/ceo-photo.jpg"
               alt="대표이사 민수홍 사진"
-              width={128}
-              height={128}
+              width="128"
+              height="128"
               className="rounded-full mx-auto mb-6 border-4 border-gray-700"
             />
             <h3 className="text-3xl font-bold mb-4">대표이사 인사말</h3>
