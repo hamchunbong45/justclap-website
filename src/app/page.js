@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { MapPin, Building, Users, BarChart, Search, Handshake, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 export default function Home() {
@@ -117,41 +118,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Gym Search MVP */}
-          <div className="bg-gray-800 p-8 rounded-lg">
-            <h4 className="text-2xl font-bold mb-4 text-center text-yellow-400">도장 바로 검색하기</h4>
-            <form className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
-              <div className="flex flex-col">
-                <label htmlFor="region" className="mb-2 text-sm font-medium text-gray-400">지역</label>
-                <select id="region" className="bg-gray-700 border border-gray-600 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                  <option>서울</option>
-                  <option>경기</option>
-                  <option>인천</option>
-                  <option>부산</option>
-                </select>
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="type" className="mb-2 text-sm font-medium text-gray-400">종목</label>
-                <select id="type" className="bg-gray-700 border border-gray-600 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                  <option>MMA</option>
-                  <option>킥복싱</option>
-                  <option>주짓수</option>
-                  <option>복싱</option>
-                </select>
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="time" className="mb-2 text-sm font-medium text-gray-400">시간대</label>
-                <select id="time" className="bg-gray-700 border border-gray-600 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                  <option>오전</option>
-                  <option>오후</option>
-                  <option>저녁</option>
-                  <option>무관</option>
-                </select>
-              </div>
-              <button type="button" className="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-md hover:bg-yellow-500 flex items-center justify-center">
-                <Search className="mr-2 h-5 w-5"/> 검색하기
-              </button>
-            </form>
+          {/* Gym Search Link */}
+          <div className="bg-gray-800 p-8 rounded-lg text-center">
+            <h4 className="text-2xl font-bold mb-4 text-yellow-400">내 주변 최고의 도장 찾기</h4>
+            <p className="text-gray-400 mb-6">JustClap의 지도 검색 서비스로 검증된 파트너 도장을 만나보세요.</p>
+            <Link href="/gym-search" legacyBehavior>
+              <a className="inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-500 transition-colors text-lg">
+                <Search className="inline-block mr-2 h-5 w-5" />
+                도장 검색 페이지로 이동
+              </a>
+            </Link>
           </div>
         </section>
 
